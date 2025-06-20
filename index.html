@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Habilidad Mental</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <img src="C:\Users\ALUMNOPC17\Desktop\403\Nueva carpeta\cecytem-logo.png" rel="Logo de CECyTEM">
+        <h1>Juego de Habilidad Mental</h1>
+        <div id="game-screen">
+            <div class="score-timer">
+                <p>Puntaje: <span id="score">0</span></p>
+                <p>Tiempo: <span id="timer">30</span>s</p>
+            </div>
+            <div id="question-container">
+                <p id="question"></p>
+                <input type="text" id="answer-input" placeholder="Escribe tu respuesta aquí">
+                <button id="submit-answer">Responder</button>
+            </div>
+            <p id="feedback" class="feedback"></p>
+        </div>
 
+        <div id="start-screen" class="screen active">
+            <h2>Bienvenido al Juego de Habilidad Mental</h2>
+            <button id="start-game-button">Iniciar Juego</button>
+        </div>
+
+        <div id="end-screen" class="screen">
+            <h2>Juego Terminado</h2>
+            <p>Puntaje Final: <span id="final-score"></span></p>
+            <p id="result-message"></p>
+            <button id="restart-game-button">Jugar de Nuevo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
